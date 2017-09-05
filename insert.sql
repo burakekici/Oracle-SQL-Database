@@ -1,0 +1,187 @@
+
+--1
+-- EMAIL, PASSWORD, USERNAME, AGE, TYPE
+CALL ADD_MEMBER('user1@user','688787d8ff144c502c7f5cffaafe2cc588d86079f9de88304c26b0cb99ce91c6','user1','3','2');
+CALL ADD_MEMBER('user2@user','688787d8ff144c502c7f5cffaafe2cc588d86079f9de88304c26b0cb99ce91c6','user2','3','2');
+
+--2
+-- TITLE, RELEASE_DATE, LENGTH
+CALL ADD_MOVIE('The Shawnshank Redemption', '01/01/1994', '123');
+CALL ADD_MOVIE('The Godfather', '01/01/1972', '144');
+CALL ADD_MOVIE('The Dark Knight', '01/01/2008', '131');
+CALL ADD_MOVIE('Schindlers List', '01/01/1993', '100');
+CALL ADD_MOVIE('Pulp Fiction', '01/01/1994', '85');
+CALL ADD_MOVIE('Lord of The Rings', '01/01/2003', '123');
+CALL ADD_MOVIE('Fight Club', '01/01/1999', '111');
+CALL ADD_MOVIE('Forrest Gump', '01/01/1994', '144');
+CALL ADD_MOVIE('Inception', '01/01/2009', '127');
+CALL ADD_MOVIE('The Matrix', '01/01/1999', '162');
+--CALL UPDATE_MOVIE('2', 'The Godfather', '01/01/1972', '126');
+--CALL DELETE_MOVIE('5');
+
+--3
+-- MOVIE_ID, TITLE
+CALL ADD_POSTER('1', 'poster1');
+CALL ADD_POSTER('2', 'poster2');
+CALL ADD_POSTER('3', 'poster3');
+CALL ADD_POSTER('4', 'poster4');
+CALL ADD_POSTER('5', 'poster5');
+CALL ADD_POSTER('6', 'poster6');
+CALL ADD_POSTER('7', 'poster7');
+CALL ADD_POSTER('8', 'poster8');
+CALL ADD_POSTER('9', 'poster9');
+CALL ADD_POSTER('10', 'poster10');
+
+--4
+-- MOVIE_ID, STORYLINE
+CALL ADD_STORYLINE('1', 'storyline1');
+CALL ADD_STORYLINE('2', 'storyline2');
+CALL ADD_STORYLINE('3', 'storyline3');
+CALL ADD_STORYLINE('4', 'storyline4');
+CALL ADD_STORYLINE('5', 'storyline5');
+CALL ADD_STORYLINE('6', 'storyline6');
+CALL ADD_STORYLINE('7', 'storyline7');
+CALL ADD_STORYLINE('8', 'storyline8');
+CALL ADD_STORYLINE('9', 'storyline9');
+CALL ADD_STORYLINE('10', 'storyline10');
+
+--5
+--MOVIE_ID, AGELIMIT
+CALL ADD_AGELIMIT('1', '18');
+CALL ADD_AGELIMIT('2', '3');
+CALL ADD_AGELIMIT('3', '13');
+CALL ADD_AGELIMIT('4', '6');
+CALL ADD_AGELIMIT('5', '18');
+CALL ADD_AGELIMIT('6', '18');
+CALL ADD_AGELIMIT('7', '3');
+CALL ADD_AGELIMIT('8', '3');
+CALL ADD_AGELIMIT('9', '13');
+CALL ADD_AGELIMIT('10', '13');
+
+--6
+-- MOVIE_ID, GENRE
+CALL ADD_GENRE('1','Drama');
+CALL ADD_GENRE('2','Horror');
+CALL ADD_GENRE('3','Comedy');
+CALL ADD_GENRE('4','Adventure');
+CALL ADD_GENRE('5','Fantasy');
+CALL ADD_GENRE('6','Animation');
+CALL ADD_GENRE('7','Horror');
+CALL ADD_GENRE('8','Comedy');
+CALL ADD_GENRE('9','Adventure');
+CALL ADD_GENRE('10','Fantasy');
+
+--7
+-- NAME, YEAR
+CALL ADD_LANGUAGE('1','Turkish');
+CALL ADD_LANGUAGE('2','English');
+CALL ADD_LANGUAGE('3','French');
+CALL ADD_LANGUAGE('4','English');
+CALL ADD_LANGUAGE('5','English,Turkish');
+CALL ADD_LANGUAGE('6','German');
+CALL ADD_LANGUAGE('7','English');
+CALL ADD_LANGUAGE('8','French');
+CALL ADD_LANGUAGE('9','Chinese');
+CALL ADD_LANGUAGE('10','Turkish');
+
+--8
+-- NAME, SURNAME, AGE, HOMETOWN
+CALL ADD_ACTOR('Leonardo','Dicaprio','30','USA');
+CALL ADD_ACTOR('Tom','Hardy','40','USA');
+CALL ADD_ACTOR('Keanu','Reeves','60','USA');
+CALL ADD_ACTOR('Tom','Hanks','70','USA');
+CALL ADD_ACTOR('Christian','Bale','80','USA');
+CALL ADD_ACTOR('Katheryn','Winnick','42','USA');
+CALL ADD_ACTOR('Travis','Fimmel','48','Sweden');
+CALL ADD_ACTOR('Emma','Watson','35','USA');
+CALL ADD_ACTOR('Vin','Diesel','52','USA');
+
+--9
+-- NAME, SURNAME, AGE, HOMETOWN
+CALL ADD_DIRECTOR('Christopher','Nolan','55','USA');
+CALL ADD_DIRECTOR('Lana','Wachowski','45','USA');
+CALL ADD_DIRECTOR('Robert','Zemeckis','35','USA');
+CALL ADD_DIRECTOR('Peter','Jackson','45','USA');
+CALL ADD_DIRECTOR('Frank','Darabont','55','USA');
+CALL ADD_DIRECTOR('Stanley','Kubrick','55','USA');
+CALL ADD_DIRECTOR('Federico','Fellini','56','USA');
+CALL ADD_DIRECTOR('Martin','Scorsese','57','USA');
+
+--10
+-- MOVIE_ID, ACTOR_ID
+CALL ADD_MOVIE_ACTOR('1','2');
+CALL ADD_MOVIE_ACTOR('6','4');
+CALL ADD_MOVIE_ACTOR('4','6');
+CALL ADD_MOVIE_ACTOR('6','1');
+CALL ADD_MOVIE_ACTOR('9','2');
+CALL ADD_MOVIE_ACTOR('1','9');
+CALL ADD_MOVIE_ACTOR('2','7');
+CALL ADD_MOVIE_ACTOR('3','8');
+CALL ADD_MOVIE_ACTOR('5','9');
+CALL ADD_MOVIE_ACTOR('7','1');
+
+--11
+-- MOVIE_ID, DIRECTOR_ID
+CALL ADD_MOVIE_DIRECTOR('1','3');
+CALL ADD_MOVIE_DIRECTOR('1','1');
+CALL ADD_MOVIE_DIRECTOR('2','6');
+CALL ADD_MOVIE_DIRECTOR('3','4');
+CALL ADD_MOVIE_DIRECTOR('4','7');
+CALL ADD_MOVIE_DIRECTOR('5','8');
+CALL ADD_MOVIE_DIRECTOR('6','1');
+CALL ADD_MOVIE_DIRECTOR('2','1');
+
+--12
+-- MOVIE_ID, MEMBER_ID, COMMENT
+CALL ADD_MOVIE_COMMENT('1', '1', 'Awesome');
+CALL ADD_MOVIE_COMMENT('2', '2', 'Great');
+CALL ADD_MOVIE_COMMENT('3', '3', 'Perfect');
+CALL ADD_MOVIE_COMMENT('4', '4', 'Terrible');
+CALL ADD_MOVIE_COMMENT('5', '5', 'Good');
+
+--13
+-- ACTOR_ID, MEMBER_ID, COMMENT
+CALL ADD_ACTOR_COMMENT('10', '1', 'Awesome');
+CALL ADD_ACTOR_COMMENT('11', '2', 'Great');
+CALL ADD_ACTOR_COMMENT('3', '3', 'Perfect');
+CALL ADD_ACTOR_COMMENT('2', '4', 'Terrible');
+CALL ADD_ACTOR_COMMENT('1', '5', 'Good');
+
+--14
+-- DIRECTOR_ID, MEMBER_ID, COMMENT
+CALL ADD_DIRECTOR_COMMENT('10', '1', 'Awesome');
+CALL ADD_DIRECTOR_COMMENT('17', '2', 'Great');
+CALL ADD_DIRECTOR_COMMENT('6', '3', 'Perfect');
+CALL ADD_DIRECTOR_COMMENT('2', '4', 'Terrible');
+CALL ADD_DIRECTOR_COMMENT('1', '10', 'Good');
+
+--15
+-- MOVIE_ID, MEMBER_ID, RATING
+CALL ADD_MOVIE_RATING('1', '1', '8');
+CALL ADD_MOVIE_RATING('2', '2', '9');
+CALL ADD_MOVIE_RATING('3', '2', '10');
+CALL ADD_MOVIE_RATING('4', '3', '6');
+CALL ADD_MOVIE_RATING('5', '4', '7');
+CALL ADD_MOVIE_RATING('6', '5', '5');
+
+--16
+-- ACTOR_ID, MEMBER_ID, RATING
+CALL ADD_ACTOR_RATING('1', '1', '8');
+CALL ADD_ACTOR_RATING('2', '2', '9');
+CALL ADD_ACTOR_RATING('3', '2', '10');
+CALL ADD_ACTOR_RATING('4', '3', '6');
+CALL ADD_ACTOR_RATING('5', '4', '7');
+CALL ADD_ACTOR_RATING('6', '5', '5');
+
+--17
+-- DIRECTOR_ID, MEMBER_ID, RATING
+CALL ADD_DIRECTOR_RATING('1', '1', '8');
+CALL ADD_DIRECTOR_RATING('2', '2', '9');
+CALL ADD_DIRECTOR_RATING('3', '2', '10');
+CALL ADD_DIRECTOR_RATING('4', '3', '6');
+CALL ADD_DIRECTOR_RATING('5', '4', '7');
+CALL ADD_DIRECTOR_RATING('6', '5', '5');
+
+--18
+-- LOG
+CALL ADD_LOG('An admin is logged in.');
